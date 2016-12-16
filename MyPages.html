@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+<meta charset = "utf-8" > 
+<title>Моя страница</title> 
+<link rel="stylesheet" type="text/css" href="styles.css"> 
+</head> 
+<body bgcolor=#D0D2FF>
+	<div class ="main"> 
+		<div>
+			<div class = "header">
+				<div class = "login"> 
+					<button id="myBtn">Вход</button>
+					<div id="myModal" class="modal">
+					  <div class="modal-content">
+						<span class="close">x</span>
+						<p>
+						<form align=center >
+						  <fieldset >
+						   <legend><b>Вход</b></legend>
+						   <br >
+							<p align=center>Логин: <input type="text" /></p>
+							<p align=center>Пароль: <input type="password" /></p> 
+						   <br />
+						   <br >
+							<p align=center><input type="submit" value="Войти" /></p> 
+						   <br />
+						  </fieldset>
+						 </form>
+						 </p>
+					  </div>
+
+					</div>
+
+					<script>
+					var modal = document.getElementById('myModal');
+					var btn = document.getElementById("myBtn");
+					var span = document.getElementsByClassName("close")[0];
+					btn.onclick = function() {
+						modal.style.display = "block";
+					}
+					span.onclick = function() {
+						modal.style.display = "none";
+					}
+					window.onclick = function(event) {
+						if (event.target == modal) {
+							modal.style.display = "none";
+						}
+					}
+					</script>
+				</div> 
+				<div class = "title"><b>Новости науки и техники</b></div> 
+			</div> 
+			<div>  
+				<ul id="navbar"> 
+					<li><a href="Home.html">Главная</a></li> 
+					<li><a href="#">Новости</a> 
+						<ul> 
+							<li><a href="#">Наука</a></li> 
+							<li><a href="#">Технологии</a></li> 
+						</ul> 
+					</li> 
+					<li><a href="Home.html">Категории</a></li> 
+					<li><a href="Contacts.html">Контакты</a></li> 
+					
+					<li><a href = "Login.html">Вход/регистрация</a></li> 
+				</ul> 
+			</div>  	
+			<div class = "categorii">
+				<br >
+					<form align=center >
+						<fieldset >
+								<legend><b>Профиль</b></legend>
+								<img src="техника.png" width="170" height="200" align="left">	
+								<font size=4 align=left><b>Фамилия: </b></font><font size=5 color="yellow" align=justify ><b>Фамилия</b></font><br>
+								<font size=4 align=justify><b>Имя: </b></font><font size=5 color="yellow" ><b>Имя</b></font><br>
+								<font size=4 align=justify><b>Город: </b></font><font size=5 color="yellow" ><b>Город</b></font><br>
+								<font size=4 align=justify><b>Дата рождения: </b></font><font size=5 color="yellow" ><b>01.01.2000</b></font><br>
+								
+						</fieldset>
+					</form>
+				</br >
+				
+			</div>
+			
+		</div>
+		<div class = "footer">
+		<div class = "year"><b>2016</b></div>
+		</div> 
+	
+	</div>
+
+</body > 
+</html> 
